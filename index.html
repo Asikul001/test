@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prime CA & Associates | GST Audit & Tax Consultants</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f9fc;--card:#fff;--text:#1b2437;--muted:#5b6679;--primary:#0b3d91;--accent:#f5a623;--line:#e3e8f0;--hero:linear-gradient(135deg,#0b3d91,#1e6fd9);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1420;--card:#171f30;--text:#e8edf7;--muted:#9aa6bd;--primary:#6aa4ff;--line:#26314a;--hero:linear-gradient(135deg,#0b2a66,#14509e)}}
+:root[data-theme="dark"]{--bg:#0e1420;--card:#171f30;--text:#e8edf7;--muted:#9aa6bd;--primary:#6aa4ff;--line:#26314a;--hero:linear-gradient(135deg,#0b2a66,#14509e)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Poppins',system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--card);border-bottom:1px solid var(--line);z-index:10}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;color:var(--primary);font-size:1.15rem;text-decoration:none}
+.logo span{color:var(--accent)}
+nav ul{display:flex;gap:22px;list-style:none;padding:0}
+nav a{color:var(--text);text-decoration:none;font-size:.92rem}
+nav a:hover{color:var(--primary)}
+#menu{display:none;background:none;border:0;font-size:1.6rem;color:var(--text);cursor:pointer}
+.btn{display:inline-block;background:var(--accent);color:#1b1b1b;padding:12px 26px;border-radius:30px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font:600 .95rem Poppins,sans-serif;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,.2)}
+.hero{background:var(--hero);color:#fff;padding:90px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:2.6rem;line-height:1.2;margin-bottom:16px}
+.hero p{opacity:.92;margin-bottom:26px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{background:rgba(255,255,255,.12);backdrop-filter:blur(6px);border-radius:16px;padding:22px;text-align:center}
+.stat b{display:block;font-size:2rem;color:var(--accent)}
+section{padding:70px 0}
+h2{font-size:1.9rem;text-align:center;margin-bottom:8px;color:var(--primary)}
+.sub{text-align:center;color:var(--muted);margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;transition:.25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 28px rgba(11,61,145,.15)}
+.card .ic{font-size:2rem;margin-bottom:10px}
+.card h3{font-size:1.05rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.9rem}
+.alt{background:var(--card)}
+.steps .card{text-align:center}
+.steps .n{width:42px;height:42px;border-radius:50%;background:var(--primary);color:#fff;display:grid;place-items:center;margin:0 auto 10px;font-weight:700}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+form{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;display:grid;gap:14px}
+form h3{color:var(--primary)}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text);font:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--primary)}
+.ok{display:none;background:#e6f7ec;color:#14632d;padding:12px;border-radius:10px;font-size:.9rem}
+.stars{display:flex;gap:6px;flex-direction:row-reverse;justify-content:flex-end}
+.stars input{display:none}
+.stars label{font-size:1.9rem;color:#c5cbd8;cursor:pointer}
+.stars input:checked~label,.stars label:hover,.stars label:hover~label{color:var(--accent)}
+.contact-info p{margin-bottom:12px}
+.contact-info{background:var(--hero);color:#fff;border-radius:16px;padding:28px}
+footer{text-align:center;padding:24px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+@media(max-width:800px){
+#menu{display:block}
+nav ul{display:none;position:absolute;top:64px;left:0;right:0;background:var(--card);flex-direction:column;padding:16px 20px;border-bottom:1px solid var(--line)}
+nav ul.open{display:flex}
+.hero .wrap,.two{grid-template-columns:1fr}
+.hero h1{font-size:2rem}
+.hero{padding:60px 0}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#home">Prime<span>CA</span> & Associates</a>
+<button id="menu" aria-label="Menu">☰</button>
+<ul id="links"><li><a href="#services">Services</a></li><li><a href="#why">Why Us</a></li><li><a href="#process">Process</a></li><li><a href="#feedback">Feedback</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav></div></header>
+
+<section class="hero" id="home"><div class="wrap">
+<div><h1>Trusted GST Audit & Tax Consultants</h1>
+<p>Complete tax, GST, audit and compliance solutions for individuals, startups and growing businesses. Stay compliant, save tax, grow confidently.</p>
+<a class="btn" href="#contact">Book Free Consultation</a></div>
+<div class="stats"><div class="stat"><b>15+</b>Years Experience</div><div class="stat"><b>2500+</b>Happy Clients</div><div class="stat"><b>10k+</b>GST Returns Filed</div><div class="stat"><b>100%</b>On-time Filing</div></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2>Our Services</h2><p class="sub">End-to-end financial and compliance support under one roof</p>
+<div class="grid">
+<div class="card"><div class="ic">📑</div><h3>GST Audit & Reconciliation</h3><p>GSTR-9/9C audit, ITC reconciliation, notice handling and departmental audit support.</p></div>
+<div class="card"><div class="ic">🧾</div><h3>GST Registration & Returns</h3><p>New registration, monthly/quarterly returns, e-invoicing and e-way bill compliance.</p></div>
+<div class="card"><div class="ic">💰</div><h3>Income Tax Planning</h3><p>ITR filing, tax saving strategies, advance tax, TDS returns and assessments.</p></div>
+<div class="card"><div class="ic">🔍</div><h3>Statutory & Tax Audit</h3><p>Audit under Companies Act and Income Tax Act with accurate, timely reports.</p></div>
+<div class="card"><div class="ic">🏢</div><h3>Company Registration</h3><p>Pvt Ltd, LLP, partnership, MSME, Startup India and ROC compliance.</p></div>
+<div class="card"><div class="ic">📊</div><h3>Accounting & Advisory</h3><p>Bookkeeping, payroll, financial projections, loan reports and business advisory.</p></div>
+</div></div></section>
+
+<section class="alt" id="why"><div class="wrap">
+<h2>Why Choose Us</h2><p class="sub">Professional, transparent and result-driven</p>
+<div class="grid">
+<div class="card"><div class="ic">🎓</div><h3>Expert CAs</h3><p>Qualified chartered accountants with deep GST and tax expertise.</p></div>
+<div class="card"><div class="ic">⏱️</div><h3>Always On Time</h3><p>Never miss a deadline – we track every due date for you.</p></div>
+<div class="card"><div class="ic">🔒</div><h3>Confidential</h3><p>Your financial data is handled with strict confidentiality.</p></div>
+<div class="card"><div class="ic">💬</div><h3>Clear Pricing</h3><p>Fair, upfront fees with no hidden charges.</p></div>
+</div></div></section>
+
+<section id="process"><div class="wrap">
+<h2>How It Works</h2><p class="sub">Simple 4-step process</p>
+<div class="grid steps">
+<div class="card"><div class="n">1</div><h3>Consult</h3><p>Share your requirement with us.</p></div>
+<div class="card"><div class="n">2</div><h3>Submit Documents</h3><p>Securely upload your records.</p></div>
+<div class="card"><div class="n">3</div><h3>We Process</h3><p>Our team handles audit & filing.</p></div>
+<div class="card"><div class="n">4</div><h3>Stay Compliant</h3><p>Get reports and ongoing support.</p></div>
+</div></div></section>
+
+<section class="alt" id="feedback"><div class="wrap two">
+<div><h2 style="text-align:left">Client Feedback</h2><p class="sub" style="text-align:left">Your opinion helps us improve.</p>
+<div class="card" style="margin-bottom:14px"><p>"Excellent GST audit support. They resolved our notice within days."</p><b>— R. Mehta, Trader</b></div>
+<div class="card"><p>"Professional team and very clear guidance on tax planning."</p><b>— S. Das, Startup Founder</b></div></div>
+<form id="fb"><h3>Share Your Feedback</h3>
+<input name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<div class="stars" aria-label="Rating"><input type="radio" name="r" id="s5" value="5"><label for="s5">★</label><input type="radio" name="r" id="s4" value="4"><label for="s4">★</label><input type="radio" name="r" id="s3" value="3"><label for="s3">★</label><input type="radio" name="r" id="s2" value="2"><label for="s2">★</label><input type="radio" name="r" id="s1" value="1"><label for="s1">★</label></div>
+<textarea name="msg" rows="4" placeholder="Write your feedback..." required></textarea>
+<button class="btn" type="submit">Submit Feedback</button>
+<div class="ok">Thank you! Your feedback has been received.</div></form>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Contact Us</h2><p class="sub">Get a free consultation today</p>
+<div class="two">
+<div class="contact-info"><h3 style="margin-bottom:14px">Get In Touch</h3>
+<p>📍 123, Business Park, Your City, India</p><p>📞 +91 98765 43210</p><p>✉️ info@primeca.in</p><p>🕘 Mon–Sat: 10:00 AM – 7:00 PM</p></div>
+<form id="ct"><h3>Send a Message</h3>
+<input name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9+ ]{10,15}">
+<select name="svc" required><option value="">Select Service</option><option>GST Audit</option><option>GST Registration / Returns</option><option>Income Tax</option><option>Company Registration</option><option>Accounting</option><option>Other</option></select>
+<textarea name="msg" rows="4" placeholder="How can we help you?" required></textarea>
+<button class="btn" type="submit">Send Message</button>
+<div class="ok">Thanks! We will contact you shortly.</div></form>
+</div></div></section>
+
+<footer>© 2026 Prime CA & Associates. All rights reserved.</footer>
+
+<script>
+document.getElementById('menu').onclick=function(){document.getElementById('links').classList.toggle('open')};
+document.querySelectorAll('#links a').forEach(function(a){a.onclick=function(){document.getElementById('links').classList.remove('open')}});
+['fb','ct'].forEach(function(id){var f=document.getElementById(id);f.addEventListener('submit',function(e){e.preventDefault();f.querySelector('.ok').style.display='block';f.reset();});});
+</script>
+</body>
+</html>
